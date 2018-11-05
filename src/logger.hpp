@@ -34,13 +34,9 @@ public:
     }
 
 public:
-    logger(double step, double stop, const std::string & name = "") {
-        if (name != "") {
-            log_data_["name"] = name;
-        }
-
+    logger(double step, const std::string & name = "") {
+        if (name != "") log_data_["name"] = name;
         log_data_["timeStep"] = step;
-        log_data_["duration"] = stop;
     }
 
     void add_sphere(const std::string & name, double radius) {
