@@ -25,7 +25,6 @@ class logger
   // private:
 public:
   json log_data_;
-  double step_;
   std::unordered_map<std::string, std::array<double, 7>> positions_;
 
   // Utilitiy method called by add_*
